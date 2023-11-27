@@ -1,16 +1,17 @@
-const conversion = document.querySelector('[data-submit]')
-const results = document.querySelector('#output') 
-let arr = [0,1,2,3,4,5,6,7,8,9,10]
+let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let index = 0;
 
-function getting (){
-if(number in arr){
-    let input =
+function displayNextElement() {
+    if (index < array.length) {
+        console.log(array[index]);
+        index++;
+    } else {
+        console.log("End of array reached");
+    }
 }
-}
-// function value (){
-//     let minutes = document.getElementById('minutes').value
-//     let seconds = minutes * 60
-//     results.textContent = seconds.toFixed(2)
-// }
 
-// conversion.addEventListener('click',value)
+
+// Loop
+for (let i = 0; i < array.length; i++) {
+    displayNextElement();
+}
